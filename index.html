@@ -273,6 +273,16 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
       <div><dt>Goals</dt><dd>Build scalable, people-centered technology and contribute to meaningful, real-world projects while growing as a Computer Engineer.</dd></div>
       <div><dt>Contact</dt><dd>niehjanevillarde1432@gmail.com<br>0947 515 3609<br><a href="https://linkedin.com/in/niehjane-villarde/" target="_blank" rel="noopener" style="text-decoration:underline">linkedin.com/in/niehjane-villarde</a></dd></div>
     </dl>
+    <div style="margin-top:36px;padding-top:28px;border-top:1px solid rgba(239,231,220,.16);">
+      <dt style="font-family:var(--head);font-weight:600;font-size:1rem;color:var(--sky);margin-bottom:16px;display:block;">Badges</dt>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;">
+        <img src="badge/aws-academy-graduate-cloud-foundations-training-bad (1).png" alt="AWS Academy Graduate — Cloud Foundations" style="height:90px;width:auto;">
+        <img src="badge/aws-academy-graduate-machine-learning-foundations-t.png" alt="AWS Academy Graduate — Machine Learning Foundations" style="height:90px;width:auto;">
+        <img src="badge/aws-academy-graduate-machine-learning-for-natural-l.png" alt="AWS Academy Graduate — Machine Learning for NLP" style="height:90px;width:auto;">
+        <img src="badge/comptia-it-fundamentals-itf-certification.1.png" alt="CompTIA IT Fundamentals ITF+ Certification" style="height:90px;width:auto;">
+        <a href="#" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:transparent;color:var(--cream);font-family:var(--head);font-weight:700;font-size:.88rem;border:1px solid rgba(239,231,220,.38);border-radius:999px;text-decoration:none;transition:all .2s ease;" onmouseover="this.style.background='var(--cream)';this.style.color='#1a090c'" onmouseout="this.style.background='transparent';this.style.color='var(--cream)'">📄 View Resume</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -489,25 +499,40 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
       <div class="pv-pane active" id="aw-1">
         <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
         <h3 class="pd-title">Artifact 1: Compilation of Lab Activity</h3>
-        <p class="pd-sub">[Month DD, YYYY]</p>
+        <p class="pd-sub"></p>
         <div class="pd-field"><strong>Description or purpose</strong>
-          <div class="pd-body"><p>[What the lab activities were and why you did them.]</p></div>
+          <div class="pd-body">
+            <p>This compilation covers the lab activities and performance tasks I completed in CPE C314 – Artificial Intelligence 2, from classical machine learning all the way to a retrieval-based chatbot.</p>
+            <p><strong style="color:var(--cream)">Lab 1.1 – Linear Regression:</strong> Predicted California housing prices using correlation analysis, imputation, and MinMax scaling. Achieved R² ≈ 0.63 and MAE ≈ $51K.</p>
+            <p><strong style="color:var(--cream)">PTS2 – Feature Selection:</strong> Compared full model against RFE (R² 0.505) and PCA (R² 0.531) — both reduced versions scored slightly lower, which showed me simplification has a cost.</p>
+            <p><strong style="color:var(--cream)">Lab 1 – NLP Regex:</strong> Text preprocessing using regex: lowercasing, punctuation removal, URL/hashtag extraction, stopword removal, and a spam/ham email pipeline.</p>
+            <p><strong style="color:var(--cream)">Lab 2.1 – AWS SageMaker:</strong> Trained a LinearLearner to detect negative reviews on a 70,000-review dataset, with endpoint deployment and prediction testing.</p>
+            <p><strong style="color:var(--cream)">Lab 5 – TF-IDF:</strong> Applied TF-IDF on a 30-sentence Taglish dataset with custom Tagalog and English stopwords, weight table, heatmap, and word cloud.</p>
+            <p><strong style="color:var(--cream)">Lab 6 – Sentiment Analysis:</strong> Compared VADER with TF-IDF classifiers (Naive Bayes, Logistic Regression, Linear SVM) on customer reviews.</p>
+            <p><strong style="color:var(--cream)">Lab 8 – Chatbots:</strong> Built rule-based, retrieval-based (TF-IDF + cosine similarity), and ML-based (MLP intent classifier) chatbots.</p>
+            <p><strong style="color:var(--cream)">PT3 – NLP Pipeline:</strong> Full Taglish pipeline with language detection, tokenization, stemming, lemmatization, and a custom 218-word stopword corpus.</p>
+            <p><strong style="color:var(--cream)">Lab 9 – RAG Chatbot & NER:</strong> Scam-aware RAG chatbot over Philippine anti-scam documents using MiniLM embeddings and flan-t5. Hit 100% top-1 retrieval on 12 in-scope questions and refused 5/5 out-of-scope ones.</p>
+          </div>
         </div>
         <div class="pd-field"><strong>Link</strong>
-          <div class="pd-body"><p><a href="#" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:underline">View Working Notebook</a></p></div>
+          <div class="pd-body"><p><a href="https://github.com/niehjanevillarde1432-sys/Artifact-1-Compilation-of-Lab-Activity" target="_blank" rel="noopener" style="color:var(--sky);text-decoration:underline">View Working Notebook</a></p></div>
         </div>
         <div class="pd-field"><strong>Learning Outcomes Demonstrated</strong>
-          <div class="pd-body"><p><span class="so">Student Outcome [#]</span> [Why this outcome fits.]</p></div>
+          <ul class="pd-tags">
+            <li>Student Outcome 1 — ML and NLP fundamentals across regression, feature selection, preprocessing, TF-IDF, sentiment analysis, and neural networks.</li>
+            <li>Student Outcome 2 — Applied AI tools to real cases: SageMaker for review classification, chatbots for customer service, regression for house price prediction.</li>
+            <li>Student Outcome 3 — Built original work: a scam-aware RAG chatbot with evaluation and ablation, and a Taglish NLP pipeline with a custom dataset.</li>
+          </ul>
         </div>
         <div class="pd-field"><strong>Reflection</strong>
-          <div class="pd-body"><p>[What you learned, and how it contributes to your personal goals.]</p></div>
+          <div class="pd-body"><p>These labs changed how I think about AI. I used to treat models as black boxes — now I understand why each decision matters. The regression labs taught me that simpler isn't always better, since removing features actually hurt my scores. The NLP labs showed me how much preprocessing affects the final output, especially when working with Taglish where standard tools don't work out of the box. Lab 2.1 was my first time deploying a model on the cloud, which felt very different from just running a notebook. Lab 9 was the most rewarding — building a chatbot that could refuse wrong questions taught me that knowing a system's limits is just as important as its capabilities.</p></div>
         </div>
       </div>
 
       <div class="pv-pane" id="aw-2">
         <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
         <h3 class="pd-title">Artifact 2: IEEE Journal Project Documentation</h3>
-        <p class="pd-sub" style="margin-bottom:8px">[Month DD, YYYY]</p>
+        <p class="pd-sub" style="margin-bottom:8px"></p>
         <div style="font-size:.8rem;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">Project: Automated Structuring of Field Service Reports for Record Entry Using Information Extraction and Text Classification</div>
         <div class="pd-field"><strong>Description or purpose</strong>
           <div class="pd-body"><p>An IEEE-format research paper on automating how field service reports reach the CRM at Scientific Biotech Specialties, Inc. (SBSI). Field Service Engineers write their reports by hand and then retype them into Bitrix, which means double handling, transcription mistakes, and delays. The paper proposes a pipeline that reads the handwriting with TrOCR, then uses CRF models and a fine-tuned RoBERTa model to pull out key details and classify the text. The output is a structured record that a person can review before it goes into Bitrix. We built a working prototype with PaddleOCR and tried it on 20 real service reports, where reviewing a record took about 7 minutes on average.</p></div>
@@ -530,7 +555,7 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
       <div class="pv-pane" id="aw-3">
         <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
         <h3 class="pd-title">Artifact 3: Demo Video of Working Project</h3>
-        <p class="pd-sub" style="margin-bottom:8px">[Month DD, YYYY]</p>
+        <p class="pd-sub" style="margin-bottom:8px"></p>
         <div style="font-size:.8rem;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">Project: Automated Structuring of Field Service Reports for Record Entry Using Information Extraction and Text Classification</div>
         <div class="pd-field"><strong>Description or purpose</strong>
           <div class="pd-body"><p>This is a working prototype of the NLP pipeline I helped build for CPE C314. It takes a photo of a handwritten field service report and runs it through PaddleOCR to generate a draft, then brings up a structured review screen where an operator can go through each extracted field, correct anything the model got wrong, and confirm before saving. There's also a rule-based chatbot for querying and summarizing saved records, which mirrors how a Bitrix entry workflow would look. We tested it on 20 actual reports from SBSI — checkbox fields like job type and service status hit up to 65% exact agreement, while the narrative fields needed more hands-on correction.</p></div>
@@ -722,7 +747,8 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <p class="pd-sub">IT Fundamentals Certification</p>
         <div class="pd-body"><p>Foundational IT skills and knowledge certification covering basic IT concepts, infrastructure, software, security, and troubleshooting.</p></div>
         <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>CompTIA — 2024</p></div></div>
-        <div class="pd-field"><strong>Certificate</strong><div class="pd-media">Upload your CompTIA ITF+ certificate image here</div></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/comptia.png" alt="CompTIA ITF+ Certificate — Niehjane Villarde"></div>
+        <div class="pd-field"><strong>Badge</strong><img class="pd-img" src="badge/comptia-it-fundamentals-itf-certification.1.png" alt="CompTIA ITF+ Badge"></div>
       </div>
 
       <div class="pv-pane" id="cert-2">
@@ -731,7 +757,8 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <p class="pd-sub">AWS Training Badge</p>
         <div class="pd-body"><p>Covers the fundamentals of machine learning on AWS, including core ML concepts, services, and workflows.</p></div>
         <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Amazon Web Services (AWS) — 2025</p></div></div>
-        <div class="pd-field"><strong>Badge</strong><div class="pd-media">Upload your AWS Machine Learning Foundations badge here</div></div>
+        <div class="pd-field"><strong>Badge</strong><img class="pd-img" src="badge/aws-academy-graduate-machine-learning-foundations-t.png" alt="AWS Academy Graduate — Machine Learning Foundations Badge"></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/mlf.png" alt="AWS Academy Graduate — Machine Learning Foundations Training Badge"></div>
       </div>
 
       <div class="pv-pane" id="cert-3">
@@ -740,7 +767,7 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <p class="pd-sub">AWS Training Badge</p>
         <div class="pd-body"><p>Covers core cloud computing concepts and AWS services including compute, storage, networking, and security fundamentals.</p></div>
         <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Amazon Web Services (AWS) — 2025</p></div></div>
-        <div class="pd-field"><strong>Badge</strong><div class="pd-media">Upload your AWS Cloud Foundation badge here</div></div>
+        <div class="pd-field"><strong>Badge</strong><img class="pd-img" src="badge/aws-academy-graduate-cloud-foundations-training-bad (1).png" alt="AWS Academy Graduate — Cloud Foundations Badge"></div>
       </div>
 
       <div class="pv-pane" id="cert-4">
@@ -749,7 +776,7 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <p class="pd-sub">Huawei ICT Academy</p>
         <div class="pd-body"><p>An overview of artificial intelligence concepts, history, and applications, presented through the Huawei ICT Academy curriculum.</p></div>
         <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Huawei ICT Academy — 2026</p></div></div>
-        <div class="pd-field"><strong>Certificate</strong><div class="pd-media">Upload your Huawei ICT Academy certificate here</div></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/VILLARDE_HUAWEI_CERT.png" alt="Huawei ICT Academy Certificate — Niehjane Villarde"></div>
       </div>
 
       <div class="pv-pane" id="cert-5">
@@ -758,7 +785,8 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <p class="pd-sub">AWS Training Badge</p>
         <div class="pd-body"><p>Specialized training in applying machine learning techniques to natural language processing tasks on AWS.</p></div>
         <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Amazon Web Services (AWS) — 2026</p></div></div>
-        <div class="pd-field"><strong>Badge</strong><div class="pd-media">Upload your AWS ML for NLP badge here</div></div>
+        <div class="pd-field"><strong>Badge</strong><img class="pd-img" src="badge/aws-academy-graduate-machine-learning-for-natural-l.png" alt="AWS Academy Graduate — Machine Learning for NLP Badge"></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/mln.png" alt="AWS Academy Graduate — Machine Learning for Natural Language Processing Training Badge"></div>
       </div>
 
     </div><!-- /pv-panel -->

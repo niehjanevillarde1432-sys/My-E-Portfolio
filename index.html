@@ -103,7 +103,7 @@ h4{font-size:1.05rem}
 .links{display:flex;flex-wrap:wrap;gap:12px}
 .links a{text-decoration:none;font-weight:500;font-size:.9rem;color:var(--cream);border:1px solid rgba(239,231,220,.38);background:rgba(18,9,11,.35);backdrop-filter:blur(4px);padding:9px 20px;border-radius:999px;transition:all .2s ease}
 .links a:hover{background:var(--cream);color:#1a090c;border-color:var(--cream)}
-.photo{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;color:var(--on-navy-muted);background:rgba(46,15,22,.55);backdrop-filter:blur(6px);border:1px solid rgba(239,231,220,.25);border-radius:12px;overflow:hidden;font-size:.9rem;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+.photo{aspect-ratio:4/5;max-width:270px;width:100%;display:grid;place-items:center;text-align:center;color:var(--on-navy-muted);background:rgba(46,15,22,.55);backdrop-filter:blur(6px);border:1px solid rgba(239,231,220,.25);border-radius:12px;overflow:hidden;font-size:.9rem;box-shadow:0 20px 50px rgba(0,0,0,.45)}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
 .facts{margin:60px 0 0;border-top:1px solid rgba(239,231,220,.16);padding-top:34px}
 .facts .cols{margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
@@ -156,9 +156,7 @@ h4{font-size:1.05rem}
 #skills .tags li{background:var(--cream);color:#1a090c;font-weight:600;border:none}
 #skills .soft li{background:transparent;color:var(--cream);border:1px solid rgba(239,231,220,.45);font-weight:500}
 
-/* ---- Academic Work styles ---- */
-#academic{background:radial-gradient(circle at 10% 12%,rgba(128,22,38,.20) 0%,transparent 44%),radial-gradient(circle at 90% 88%,rgba(112,20,34,.18) 0%,transparent 42%),var(--bg)}
-#academic::before{content:"";position:absolute;right:-90px;top:-90px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(239,231,220,.1);pointer-events:none}
+
 .aw-card{border-left:3px solid var(--blue)}
 .so-list{margin:8px 0 0;padding:0;list-style:none}
 .so-list li{margin:0 0 10px;font-size:.95rem}
@@ -190,14 +188,16 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
   .sec-pv{padding-top:56px;padding-bottom:56px}
   #about{padding-top:56px;padding-bottom:56px}
   .sechead{position:static;margin-bottom:28px}
-  .intro{grid-template-columns:1fr;gap:32px}
-  .photo{max-width:240px;order:-1}
   .facts .cols{grid-template-columns:1fr;gap:24px}
   .pv-wrap{grid-template-columns:1fr;gap:20px}
   .pv-cards{grid-template-columns:1fr}
   .pv-panel{position:static;max-height:none}
   .sem{padding-left:22px}
   .sem>h3::before{left:-28px}
+}
+@media(max-width:600px){
+  .intro{grid-template-columns:1fr;gap:32px}
+  .photo{max-width:200px;margin-left:auto;margin-right:auto;}
 }
 </style>
 </head>
@@ -259,6 +259,7 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <a href="#projects">View Projects</a>
         <a href="https://linkedin.com/in/niehjane-villarde/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:niehjanevillarde1432@gmail.com">Email</a>
+        <a href="VILLARDE_NIEHJANE_CV (1).pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </div>
     <div class="photo">
@@ -280,7 +281,8 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <img src="badge/aws-academy-graduate-machine-learning-foundations-t.png" alt="AWS Academy Graduate — Machine Learning Foundations" style="height:90px;width:auto;">
         <img src="badge/aws-academy-graduate-machine-learning-for-natural-l.png" alt="AWS Academy Graduate — Machine Learning for NLP" style="height:90px;width:auto;">
         <img src="badge/comptia-it-fundamentals-itf-certification.1.png" alt="CompTIA IT Fundamentals ITF+ Certification" style="height:90px;width:auto;">
-        <a href="VILLARDE_NIEHJANE_CV.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:transparent;color:var(--cream);font-family:var(--head);font-weight:700;font-size:.88rem;border:1px solid rgba(239,231,220,.38);border-radius:999px;text-decoration:none;transition:all .2s ease;" onmouseover="this.style.background='var(--cream)';this.style.color='#1a090c'" onmouseout="this.style.background='transparent';this.style.color='var(--cream)'">📄 View Resume</a>
+        <img src="badge/claude-certified-developer-foundations.png" alt="Claude Certified Developer Foundations" style="height:90px;width:auto;">
+        <a href="VILLARDE_NIEHJANE_CV (1).pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:transparent;color:var(--cream);font-family:var(--head);font-weight:700;font-size:.88rem;border:1px solid rgba(239,231,220,.38);border-radius:999px;text-decoration:none;transition:all .2s ease;" onmouseover="this.style.background='var(--cream)';this.style.color='#1a090c'" onmouseout="this.style.background='transparent';this.style.color='var(--cream)'">📄 View Resume</a>
       </div>
     </div>
   </div>
@@ -450,137 +452,6 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
   </div><!-- /pv-wrap -->
 </section>
 
-<!-- ===== ACADEMIC WORK ===== -->
-<section id="academic" class="sec-pv">
-  <svg class="section-art" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <circle cx="1380" cy="60" r="280" fill="url(#g-orb)"/>
-    <circle cx="60" cy="760" r="240" fill="url(#g-orb2)"/>
-    <circle cx="80" cy="120" r="300" fill="none" stroke="url(#g-arc)" stroke-width="1"/>
-    <circle cx="1420" cy="640" r="360" fill="none" stroke="rgba(239,231,220,0.14)" stroke-width="1"/>
-    <path d="M700 60 Q700 80 720 80 Q700 80 700 100 Q700 80 680 80 Q700 80 700 60 Z" fill="#efe7dc" opacity="0.75"/>
-  </svg>
-
-  <h2 class="pv-heading">Academic Work</h2>
-  <p class="pv-subheading">Select any artifact on the left to see the full details on the right.</p>
-
-  <div class="pv-wrap">
-
-    <!-- LEFT: card grid -->
-    <div class="pv-cards">
-
-      <div style="grid-column:1/-1;font-family:var(--head);font-weight:700;font-size:1rem;color:var(--sky);text-transform:uppercase;letter-spacing:.08em;padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:4px;">CPE C314 – Artificial Intelligence 2</div>
-
-      <button class="pv-card active" data-target="aw-1" data-panel="pv-aw-panel">
-        <div class="pc-row"><span class="pc-badge">CPE C314</span><span class="pc-issuer">AI 2</span></div>
-        <div class="pc-title">Artifact 1: Compilation of Lab Activity</div>
-        <div class="pc-desc">Lab activities for Artificial Intelligence 2.</div>
-        <span class="pc-cta">View details →</span>
-      </button>
-
-      <button class="pv-card" data-target="aw-2" data-panel="pv-aw-panel">
-        <div class="pc-row"><span class="pc-badge">CPE C314</span><span class="pc-issuer">AI 2</span></div>
-        <div class="pc-title">Artifact 2: IEEE Journal Project Documentation</div>
-        <div class="pc-desc">NLP pipeline for automating field service report structuring.</div>
-        <span class="pc-cta">View details →</span>
-      </button>
-
-      <button class="pv-card" data-target="aw-3" data-panel="pv-aw-panel">
-        <div class="pc-row"><span class="pc-badge">CPE C314</span><span class="pc-issuer">AI 2</span></div>
-        <div class="pc-title">Artifact 3: Demo Video of Working Project</div>
-        <div class="pc-desc">Demo video showcasing the working project.</div>
-        <span class="pc-cta">View details →</span>
-      </button>
-
-    </div><!-- /pv-cards -->
-
-    <!-- RIGHT: detail panel -->
-    <div class="pv-panel" id="pv-aw-panel">
-
-      <div class="pv-pane active" id="aw-1">
-        <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
-        <h3 class="pd-title">Artifact 1: Compilation of Lab Activity</h3>
-        <p class="pd-sub"></p>
-        <div class="pd-field"><strong>Description or purpose</strong>
-          <div class="pd-body">
-            <p>This compilation covers the lab activities and performance tasks I completed in CPE C314 – Artificial Intelligence 2, from classical machine learning all the way to a retrieval-based chatbot.</p>
-            <p><strong style="color:var(--cream)">Lab 1.1 – Linear Regression:</strong> Predicted California housing prices using correlation analysis, imputation, and MinMax scaling. Achieved R² ≈ 0.63 and MAE ≈ $51K.</p>
-            <p><strong style="color:var(--cream)">PTS2 – Feature Selection:</strong> Compared full model against RFE (R² 0.505) and PCA (R² 0.531) — both reduced versions scored slightly lower, which showed me simplification has a cost.</p>
-            <p><strong style="color:var(--cream)">Lab 1 – NLP Regex:</strong> Text preprocessing using regex: lowercasing, punctuation removal, URL/hashtag extraction, stopword removal, and a spam/ham email pipeline.</p>
-            <p><strong style="color:var(--cream)">Lab 2.1 – AWS SageMaker:</strong> Trained a LinearLearner to detect negative reviews on a 70,000-review dataset, with endpoint deployment and prediction testing.</p>
-            <p><strong style="color:var(--cream)">Lab 5 – TF-IDF:</strong> Applied TF-IDF on a 30-sentence Taglish dataset with custom Tagalog and English stopwords, weight table, heatmap, and word cloud.</p>
-            <p><strong style="color:var(--cream)">Lab 6 – Sentiment Analysis:</strong> Compared VADER with TF-IDF classifiers (Naive Bayes, Logistic Regression, Linear SVM) on customer reviews.</p>
-            <p><strong style="color:var(--cream)">Lab 8 – Chatbots:</strong> Built rule-based, retrieval-based (TF-IDF + cosine similarity), and ML-based (MLP intent classifier) chatbots.</p>
-            <p><strong style="color:var(--cream)">PT3 – NLP Pipeline:</strong> Full Taglish pipeline with language detection, tokenization, stemming, lemmatization, and a custom 218-word stopword corpus.</p>
-            <p><strong style="color:var(--cream)">Lab 9 – RAG Chatbot & NER:</strong> Scam-aware RAG chatbot over Philippine anti-scam documents using MiniLM embeddings and flan-t5. Hit 100% top-1 retrieval on 12 in-scope questions and refused 5/5 out-of-scope ones.</p>
-          </div>
-        </div>
-        <div class="pd-field"><strong>Link</strong>
-          <div class="pd-body"><p><a href="https://github.com/niehjanevillarde1432-sys/Artifact-1-Compilation-of-Lab-Activity" target="_blank" rel="noopener" style="display:inline-block;padding:10px 22px;background:var(--blue);color:#fff;font-family:var(--head);font-weight:700;font-size:.88rem;border-radius:999px;text-decoration:none;transition:opacity .2s;" onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">View Working Notebook ↗</a></p></div>
-        </div>
-        <div class="pd-field"><strong>Learning Outcomes Demonstrated</strong>
-          <ul class="pd-tags">
-            <li>Student Outcome 1 — ML and NLP fundamentals across regression, feature selection, preprocessing, TF-IDF, sentiment analysis, and neural networks.</li>
-            <li>Student Outcome 2 — Applied AI tools to real cases: SageMaker for review classification, chatbots for customer service, regression for house price prediction.</li>
-            <li>Student Outcome 3 — Built original work: a scam-aware RAG chatbot with evaluation and ablation, and a Taglish NLP pipeline with a custom dataset.</li>
-          </ul>
-        </div>
-        <div class="pd-field"><strong>Reflection</strong>
-          <div class="pd-body"><p>These labs changed how I think about AI. I used to treat models as black boxes — now I understand why each decision matters. The regression labs taught me that simpler isn't always better, since removing features actually hurt my scores. The NLP labs showed me how much preprocessing affects the final output, especially when working with Taglish where standard tools don't work out of the box. Lab 2.1 was my first time deploying a model on the cloud, which felt very different from just running a notebook. Lab 9 was the most rewarding — building a chatbot that could refuse wrong questions taught me that knowing a system's limits is just as important as its capabilities.</p></div>
-        </div>
-      </div>
-
-      <div class="pv-pane" id="aw-2">
-        <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
-        <h3 class="pd-title">Artifact 2: IEEE Journal Project Documentation</h3>
-        <p class="pd-sub" style="margin-bottom:8px"></p>
-        <div style="font-size:.8rem;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">Project: Automated Structuring of Field Service Reports for Record Entry Using Information Extraction and Text Classification</div>
-        <div class="pd-field"><strong>Description or purpose</strong>
-          <div class="pd-body"><p>An IEEE-format research paper on automating how field service reports reach the CRM at Scientific Biotech Specialties, Inc. (SBSI). Field Service Engineers write their reports by hand and then retype them into Bitrix, which means double handling, transcription mistakes, and delays. The paper proposes a pipeline that reads the handwriting with TrOCR, then uses CRF models and a fine-tuned RoBERTa model to pull out key details and classify the text. The output is a structured record that a person can review before it goes into Bitrix. We built a working prototype with PaddleOCR and tried it on 20 real service reports, where reviewing a record took about 7 minutes on average.</p></div>
-        </div>
-        <div class="pd-field"><strong>Link</strong>
-          <div class="pd-body"><p><a href="NLP_Final%20Project_Documentation_GUBAT%2C%20MANALO%2C%20VILLARDE.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:10px 22px;background:var(--blue);color:#fff;font-family:var(--head);font-weight:700;font-size:.88rem;border-radius:999px;text-decoration:none;transition:opacity .2s;" onmouseover="this.style.opacity='.8'" onmouseout="this.style.opacity='1'">View IEEE Journal ↗</a></p></div>
-        </div>
-        <div class="pd-field"><strong>Learning Outcomes Demonstrated</strong>
-          <ul class="pd-tags">
-            <li>Student Outcome 1 — Framed a real business problem as an engineering problem and designed an NLP pipeline to solve it.</li>
-            <li>Student Outcome 6 — Pilot-tested the prototype on 20 reports and analyzed results using review time per record.</li>
-            <li>Student Outcome 7 — Applied BERT, RoBERTa, TrOCR, CRF, Hugging Face Transformers, and PaddleOCR through literature review and prototyping.</li>
-          </ul>
-        </div>
-        <div class="pd-field"><strong>Reflection</strong>
-          <div class="pd-body"><p>Writing in IEEE format pushed me to back every claim with a source or a measured result. The hardest part was being honest about scope — we designed a full comparison of CRF and transformer models but only completed the OCR pilot, so the results had to be worded carefully. Working on the extraction models also showed me how errors from the OCR stage carry into every later step, so a pipeline is only as strong as its weakest stage. This supports my goal of building practical, people-centered systems where a person can still check the output.</p></div>
-        </div>
-      </div>
-
-      <div class="pv-pane" id="aw-3">
-        <p class="pd-eyebrow">CPE C314 – Artificial Intelligence 2</p>
-        <h3 class="pd-title">Artifact 3: Demo Video of Working Project</h3>
-        <p class="pd-sub" style="margin-bottom:8px"></p>
-        <div style="font-size:.8rem;font-weight:700;color:var(--sky);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line);">Project: Automated Structuring of Field Service Reports for Record Entry Using Information Extraction and Text Classification</div>
-        <div class="pd-field"><strong>Description or purpose</strong>
-          <div class="pd-body"><p>This is a working prototype of the NLP pipeline I helped build for CPE C314. It takes a photo of a handwritten field service report and runs it through PaddleOCR to generate a draft, then brings up a structured review screen where an operator can go through each extracted field, correct anything the model got wrong, and confirm before saving. There's also a rule-based chatbot for querying and summarizing saved records, which mirrors how a Bitrix entry workflow would look. We tested it on 20 actual reports from SBSI — checkbox fields like job type and service status hit up to 65% exact agreement, while the narrative fields needed more hands-on correction.</p></div>
-        </div>
-        <div class="pd-field"><strong>Demo Video</strong>
-          <div style="margin-top:10px;border-radius:8px;overflow:hidden;border:1px solid var(--line);">
-            <iframe src="https://drive.google.com/file/d/1nRNgo48FVmr56KaJO3cELw-AispxQybB/preview" width="100%" height="280" allow="autoplay" style="display:block;border:none;"></iframe>
-          </div>
-        </div>
-        <div class="pd-field"><strong>Learning Outcomes Demonstrated</strong>
-          <ul class="pd-tags">
-            <li>Student Outcome 1 — Showed how computer vision and NLP can work together by combining OCR, field extraction, and text classification into one end-to-end pipeline.</li>
-            <li>Student Outcome 2 — Applied real AI tools to an actual industry problem: measured OCR noise (59.1% macro-average CER), built a human-in-the-loop review screen, and added a rule-based chatbot for querying records.</li>
-            <li>Student Outcome 3 — Built and tested a complete working system on 20 real field service reports collected from SBSI, with quantitative results to back it up.</li>
-          </ul>
-        </div>
-        <div class="pd-field"><strong>Reflection</strong>
-          <div class="pd-body"><p>Running the pipeline on real handwritten reports made everything click for me. The raw OCR output had an 89.5% word error rate, which was honestly surprising at first — but it's what made the human-in-the-loop design feel necessary rather than optional. Designing the review interface changed how I thought about the problem. I stopped asking "can the model get it right?" and started asking "how do we make correction fast enough that people will actually use it?" That shift felt important. For me, the most valuable part was learning that a system doesn't have to be perfect to be useful — it just has to make the hard parts easier.</p></div>
-        </div>
-      </div>
-
-    </div><!-- /pv-panel -->
-  </div><!-- /pv-wrap -->
-</section>
-
 <!-- ===== ORGANIZATIONS ===== -->
 <section id="organizations" class="sec-pv">
   <svg class="section-art" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -737,6 +608,27 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <span class="pc-cta">View details →</span>
       </button>
 
+      <button class="pv-card" data-target="cert-6" data-panel="pv-cert-panel">
+        <div class="pc-row"><span class="pc-badge">2026</span><span class="pc-issuer">Anthropic</span></div>
+        <div class="pc-title">AI Capabilities and Limitations</div>
+        <div class="pc-desc">Anthropic — AI capabilities and limitations training.</div>
+        <span class="pc-cta">View details →</span>
+      </button>
+
+      <button class="pv-card" data-target="cert-7" data-panel="pv-cert-panel">
+        <div class="pc-row"><span class="pc-badge">2026</span><span class="pc-issuer">Anthropic</span></div>
+        <div class="pc-title">Introduction to Agent Skills</div>
+        <div class="pc-desc">Anthropic — introduction to building agent skills.</div>
+        <span class="pc-cta">View details →</span>
+      </button>
+
+      <button class="pv-card" data-target="cert-8" data-panel="pv-cert-panel">
+        <div class="pc-row"><span class="pc-badge">2026</span><span class="pc-issuer">Anthropic</span></div>
+        <div class="pc-title">Claude Certified Developer – Foundations</div>
+        <div class="pc-desc">Claude Certified Developer Foundations Certification.</div>
+        <span class="pc-cta">View details →</span>
+      </button>
+
     </div><!-- /pv-cards -->
 
     <div class="pv-panel" id="pv-cert-panel">
@@ -789,31 +681,140 @@ footer{background:#0d0607;border-top:1px solid var(--line);color:var(--on-navy-m
         <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/mln.png" alt="AWS Academy Graduate — Machine Learning for Natural Language Processing Training Badge"></div>
       </div>
 
+      <div class="pv-pane" id="cert-6">
+        <p class="pd-eyebrow">Anthropic · 2026</p>
+        <h3 class="pd-title">AI Capabilities and Limitations</h3>
+        <p class="pd-sub">Anthropic Training Certificate</p>
+        <div class="pd-body"><p>Training on understanding the capabilities and limitations of AI systems, with focus on responsible and informed use of AI technology.</p></div>
+        <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Anthropic — 2026</p></div></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/AI Capabilities and Limitations.png" alt="AI Capabilities and Limitations Certificate"></div>
+      </div>
+
+      <div class="pv-pane" id="cert-7">
+        <p class="pd-eyebrow">Anthropic · 2026</p>
+        <h3 class="pd-title">Introduction to Agent Skills</h3>
+        <p class="pd-sub">Anthropic Training Certificate</p>
+        <div class="pd-body"><p>Introduction to building and understanding agent skills using Anthropic's frameworks and best practices for AI-powered automation.</p></div>
+        <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Anthropic — 2026</p></div></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/introduction to agent skills.png" alt="Introduction to Agent Skills Certificate"></div>
+      </div>
+
+      <div class="pv-pane" id="cert-8">
+        <p class="pd-eyebrow">Anthropic · 2026</p>
+        <h3 class="pd-title">Claude Certified Developer – Foundations Certification</h3>
+        <p class="pd-sub">Claude Certified Developer</p>
+        <div class="pd-body"><p>Foundations-level certification for Claude developers, covering core concepts, best practices, and practical application of Claude AI in software development.</p></div>
+        <div class="pd-field"><strong>Issuer</strong><div class="pd-body"><p>Anthropic — 2026</p></div></div>
+        <div class="pd-field"><strong>Badge</strong><img class="pd-img" src="badge/claude-certified-developer-foundations.png" alt="Claude Certified Developer Foundations Badge"></div>
+        <div class="pd-field"><strong>Certificate</strong><img class="pd-img" src="images/Claude Certified Developer - Foundations.png" alt="Claude Certified Developer Foundations Certificate"></div>
+      </div>
+
     </div><!-- /pv-panel -->
   </div><!-- /pv-wrap -->
 </section>
 
 <!-- ===== SKILLS ===== -->
-<section id="skills" class="sec-2col">
+<section id="skills" class="sec-pv" style="background:radial-gradient(circle at 15% 50%,rgba(128,22,38,.28) 0%,transparent 50%),radial-gradient(circle at 85% 20%,rgba(112,20,34,.22) 0%,transparent 50%),var(--bg);">
   <svg class="section-art" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <circle cx="40" cy="400" r="300" fill="url(#g-orb)"/>
     <circle cx="1400" cy="120" r="240" fill="url(#g-orb2)"/>
     <circle cx="1380" cy="700" r="380" fill="none" stroke="rgba(239,231,220,0.16)" stroke-width="1"/>
-    <path d="M1250 540 Q1250 560 1270 560 Q1250 560 1250 580 Q1250 560 1230 560 Q1250 560 1250 540 Z" fill="#efe7dc" opacity="0.8"/>
   </svg>
-  <div class="sechead">
-    <h2>Skills</h2>
-    <p class="lead">Competencies I have built so far. This list grows with my CpE journey.</p>
-  </div>
-  <div class="secbody">
-    <h3 class="sub" style="margin-top:0">Technical skills</h3>
-    <ul class="tags">
-      <li>Flutter / Dart</li><li>Firebase</li><li>Python</li><li>OpenCV</li><li>Machine Learning</li><li>Natural Language Processing</li><li>PyTorch</li><li>Hugging Face Transformers</li><li>scikit-learn</li><li>Arduino</li><li>Embedded Systems</li><li>Internet of Things</li>
-    </ul>
-    <h3 class="sub">Soft skills</h3>
-    <ul class="tags soft">
-      <li>Leadership</li><li>Event organization</li><li>Budget management</li><li>Publication design</li><li>Mentorship</li><li>Communication</li><li>Teamwork</li>
-    </ul>
+
+  <h2 class="pv-heading">Skills</h2>
+  <p class="pv-subheading">Competencies I have built so far. This list grows with my CpE journey.</p>
+
+  <style>
+    .sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:2;}
+    .sk-card{background:rgba(35,20,24,.7);border:1px solid rgba(239,231,220,.12);border-radius:16px;padding:28px;backdrop-filter:blur(12px);position:relative;overflow:hidden;}
+    .sk-card::before{content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(120deg,transparent 0%,rgba(239,154,168,.13) 50%,transparent 100%);animation:sk-sweep 4s linear infinite;}
+    .sk-card:nth-child(1)::before{animation-delay:0s;}
+    .sk-card:nth-child(2)::before{animation-delay:.65s;}
+    .sk-card:nth-child(3)::before{animation-delay:1.3s;}
+    .sk-card:nth-child(4)::before{animation-delay:1.95s;}
+    .sk-card:nth-child(5)::before{animation-delay:2.6s;}
+    .sk-card:nth-child(6)::before{animation-delay:3.25s;}
+    @keyframes sk-sweep{0%{left:-100%;}100%{left:200%;}}
+    .sk-card::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(239,154,168,.5),transparent);}
+    .sk-icon{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:1.2rem;margin-bottom:14px;background:rgba(168,36,57,.2);border:1px solid rgba(168,36,57,.35);}
+    .sk-title{font-family:var(--head);font-weight:700;font-size:.95rem;color:var(--cream);margin:0 0 16px;letter-spacing:.01em;}
+    .sk-pills{display:flex;flex-wrap:wrap;gap:7px;}
+    .sk-pill{font-size:.78rem;color:var(--sky);background:rgba(58,12,21,.6);border:1px solid rgba(239,154,168,.2);border-radius:6px;padding:4px 12px;}
+    @media(max-width:980px){.sk-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.sk-grid{grid-template-columns:1fr;}}
+  </style>
+
+  <div class="sk-grid">
+
+    <div class="sk-card">
+      <div class="sk-icon">&#128187;</div>
+      <p class="sk-title">Languages</p>
+      <div class="sk-pills">
+        <span class="sk-pill">Python</span>
+        <span class="sk-pill">Java</span>
+        <span class="sk-pill">Dart</span>
+        <span class="sk-pill">JavaScript</span>
+        <span class="sk-pill">HTML</span>
+        <span class="sk-pill">CSS</span>
+      </div>
+    </div>
+
+    <div class="sk-card">
+      <div class="sk-icon">&#129302;</div>
+      <p class="sk-title">Machine Learning &amp; AI</p>
+      <div class="sk-pills">
+        <span class="sk-pill">scikit-learn</span>
+        <span class="sk-pill">Hugging Face</span>
+        <span class="sk-pill">PyTorch</span>
+        <span class="sk-pill">CNNs</span>
+        <span class="sk-pill">OpenCV</span>
+        <span class="sk-pill">NLP</span>
+      </div>
+    </div>
+
+    <div class="sk-card">
+      <div class="sk-icon">&#10024;</div>
+      <p class="sk-title">AI-Assisted Development</p>
+      <div class="sk-pills">
+        <span class="sk-pill">Claude</span>
+        <span class="sk-pill">AI-Assisted Dev</span>
+        <span class="sk-pill">Prompt Engineering</span>
+        <span class="sk-pill">Code Analysis</span>
+        <span class="sk-pill">App Security</span>
+        <span class="sk-pill">Model Optimization</span>
+      </div>
+    </div>
+
+    <div class="sk-card">
+      <div class="sk-icon">&#128241;</div>
+      <p class="sk-title">Web &amp; Mobile Development</p>
+      <div class="sk-pills">
+        <span class="sk-pill">Flutter</span>
+        <span class="sk-pill">Android Studio</span>
+      </div>
+    </div>
+
+    <div class="sk-card">
+      <div class="sk-icon">&#128295;</div>
+      <p class="sk-title">Embedded &amp; IoT</p>
+      <div class="sk-pills">
+        <span class="sk-pill">Arduino</span>
+        <span class="sk-pill">Logic Circuit Design</span>
+        <span class="sk-pill">HW-SW Integration</span>
+      </div>
+    </div>
+
+    <div class="sk-card">
+      <div class="sk-icon">&#9729;&#65039;</div>
+      <p class="sk-title">Databases &amp; Cloud</p>
+      <div class="sk-pills">
+        <span class="sk-pill">Firebase</span>
+        <span class="sk-pill">SQL</span>
+        <span class="sk-pill">Oracle SQL</span>
+        <span class="sk-pill">AWS Foundations</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
